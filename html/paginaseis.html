@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 6</title>
+</head>
+<body>
+    <p id="parrafo1"></p>
+    <p id="parrafo2"></p>
+    <p id="parrafo3"></p>
+    <script>
+        /* VARIABLES DE JAVASCRIPT
+            -Identificadores únicos.
+            -Recomendable usar identificadores descriptivos.
+            -Empieza por letra, $, _  siguen con letra, numero, $ o _
+            -Pueden contener cadenas ["", ''] y numeros {enteros o decimales}
+            -Son sensibles a las mayusculas {nombre != NOMBRE != Nombre}
+            -No pueden utilizarse palabras reservadas */
+        
+        //Declaracion de variable
+        var nombre;
+
+        //Mostramos el valor de la variable (undefined)
+        document.getElementById("parrafo1").innerHTML = nombre;
+
+        //Asignacin de valor a una variable
+        nombre = 'Rolando';
+
+        //Mostramos el valor de la variable (undefined)
+        document.getElementById("parrafo2").innerHTML = nombre;
+
+        //Declaracion de variables en una sola sentencia
+        //var pais, nacimiento;
+
+        var pais = 'Reino Unido', nacimiento = 1815;
+
+
+        //Asignacion de operaciones a una variable
+        var nombreApellido = 'Rolando' + ' ' + 'Aburto';
+        var fallecimiento = nacimiento + 37;
+
+        document.getElementById("parrafo3").innerHTML = nombreApellido + 
+        ' nacio en ' +  pais + ' en ' + nacimiento + ' y murio en ' + fallecimiento;
+    </script>
+</body>
+</html>
