@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 12</title>
+</head>
+
+<body>
+    <script>
+        // TypeOf: Nos devuelve el tipo de una variable o dato
+        var cadena = 'Cadena'; //String
+        var numero = 15; //Number
+        var bool = true; //boolean
+        var lista = [1, 2, 3, 4]; //object
+        var registro = { //Object
+            nombre: 'Rolando',
+            apellido: 'Aburto'
+        };
+        var fecha = new Date(); //object
+        var miFuncion = function name(params) {
+                alert('Hola');
+            } //function
+        var sin_definir; //undefined
+        var vacia = null; //object
+
+        alert(typeof(cadena));
+        alert(typeof(numero));
+        alert(typeof(bool));
+        alert(typeof(lista));
+        alert(typeof(registro));
+        alert(typeof(fecha));
+        alert(typeof(miFuncion));
+        alert(typeof(sin_definir));
+        alert(typeof(vacia));
+
+
+        //InstanceOf nos devuelve true si un objeto es una instancia de otro especficado
+        var animales = ['perro', 'gato', 'hamster'];
+        alert(animales instanceof Array); //True
+        alert(animales instanceof Object); //True
+        alert(animales instanceof Number); //False
+        alert(animales instanceof String); //False
+    </script>
+</body>
+
+</html>
