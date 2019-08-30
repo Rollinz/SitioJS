@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 14</title>
+</head>
+<body>
+    <script>
+        // Sintaxis de una funcion
+        // function nombre_funcion (parametros_separados_por_comas){...}
+        // FUncion sin parametros
+        function saludo() {
+            alert("Holo");
+        }
+
+        // Parentesis invocan a la funcion
+        var resultado_saludo = saludo();
+        alert(resultado_saludo);
+
+        // guardar una funcion en una variable
+        var funcion_guardada = saludo;
+        alert(funcion_guardada);
+
+
+        // funcion con parametro
+        function producto(a, b) {
+            return a * b;
+        }
+
+        var resultado_producto = producto(3, 4);
+        alert(resultado_producto);
+
+        var resultado_producto = producto;
+        alert(resultado_producto);
+    </script>
+</body>
+</html>
