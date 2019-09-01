@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 16</title>
+</head>
+
+<body>
+    <script>
+        /* Parametros y argumentos:
+                    -Funcion puede tener cero o mas parametros.
+                    -Parametros son los nombres que aparecen en la definicion de una funcion.
+                    -Argumentos con los valores que pasamos a (y que recibe) una funcion.
+
+                    Reglas de parametros:
+                    -No se especifica el tipo de los parametros.
+                    -No se verifican los tipos de los argumentos.
+                    -No se comprueba el numero de los argumentos recibidos.
+                */
+
+        // Parametros por defectos
+        // Cuando llamamos a una funcion con menos argumentos de los declarados. Los valores que faltan no estan definidos
+        // NaN = No a Number
+        function suma(a, b) {
+            if (b === undefined) {
+                b = 0;
+            }
+            return a + b;
+        }
+
+        // Parametros por exceso
+        // Cuando llamamos a una funcion con mas argumentos de los que ha sido declarada. 
+        // Los valores que nos llegan pueden capturarse a traves de un objeto 
+        // (incluido en la funcion) llamado arguments
+        function valores() {
+            alert(arguments.length);
+            for (let i = 0; i < arguments.length; i++) {
+                alert(arguments[i]);
+            }
+        }
+    </script>
+</body>
+
+</html>

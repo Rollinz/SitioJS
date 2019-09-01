@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 15</title>
+</head>
+
+<body>
+    <script>
+        // Sintaxis de una funcion no anonima
+        // function nombre nombre (<parametros>) {instrucciones}
+
+        // Sintaxis de una funcion anonima
+        var producto = function(a, b) {
+            return a * b;
+        }
+        var resultado = producto(3, 6);
+        alert(resultado);
+
+        // El constructor function()
+        var miFuncion = new Function("a", "b", "return a+b;");
+        var resultado_2 = miFuncion(5, 7);
+        alert(resultado_2);
+
+        // Funciones anonimas autoinvocadas *******
+        (function() {
+            alert("Hola");
+        }());
+    </script>
+</body>
+
+</html>
