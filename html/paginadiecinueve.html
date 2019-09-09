@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 19</title>
+</head>
+<body>
+    <script>
+        /* Sintaxis For 
+            for (let inicio = 0; inicio < final; inicio++) {
+                codigo a repetir
+            }    
+
+            -Sintaxis 1 = el inicio del bucle
+            -Sintaxis 2 = Cuantas veces se repetira
+            -Sintaxis 3 = 
+        */  
+       
+       for (let i = 0; i <= 10; i++) {
+           alert("i=" + i);
+           
+       } 
+
+       /* Variaciones 
+        Si omitimos la primera sentencia debemos haber inicializado la variable
+        anterioridad
+       */
+       var j = 1;
+       for(; j <=5 ; j++) {
+           alert("j=" + j);
+       }
+
+       /* Si omitimos la segunda sentencia dentro del codigo
+       a repetir debemos incluir una instruccion break */
+
+       var k;
+       for(k = 1 ;; k++) {
+        alert("k=" + k);
+        if (k === 5) {
+            break;
+        }
+       }
+
+       /* Si omitimos la tercera sentencia debemos incrementar o
+       decrementar el valor de la variable dentro del bucle */
+
+       var l;
+       for(l = 1 ; l <= 5 ; ) {
+           alert("l=" + l);
+           l++;
+       }
+
+       /* Podemos trabajar con 2 o mas valores dentro del bucle for 
+       */
+
+       var m, n;
+       for(m = 1, n = 10 ; m <= 10, n>=1 ; m++, n--) {
+           alert("m=" + m, "n=" + n);
+       } 
+
+    </script>
+</body>
+</html>

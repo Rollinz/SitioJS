@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 18</title>
+</head>
+<body>
+    <script>
+        /* Sentencia Switch
+            -Se utiliza para hacer diferentes acciones basadas
+            en diferentes condiciones
+            -La condicion se evalua una unica vez, si existe una coincidencia
+            se ejecuta el bloque correspondiente.
+            -Break sale el bloque switch
+            -Default funciona cuando no hay coincidencias
+        */
+
+        /* Sintaxis */
+        var nota = 3;
+        var mensaje = "";
+        switch (nota) {
+            case 0:
+                mensaje = "Reprobado";
+                break;
+            case 1:
+                mensaje = "Reprobado";
+                break;
+            case 2:
+                mensaje = "Reprobado";
+                break;
+            case 3:
+                mensaje = "Reprobado";
+                break;
+            case 4:
+                mensaje = "Aprobado";
+                break;
+            case 5:
+                mensaje = "Bien hecho";
+            case 6:
+                mensaje = "Excelente";
+                break;
+            case 7:
+                mensaje = "Notable";
+                break;
+            default:
+                mensaje = "Valor no valido"
+                break;
+        }
+
+        alert(mensaje);
+    </script>
+</body>
+</html>
