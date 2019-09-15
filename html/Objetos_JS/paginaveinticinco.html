@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 25</title>
+</head>
+<body>
+    <script>
+        // 1- Definir y crear un objeto simple utilizando un literal.
+        var persona_1 = {
+            nombre: 'Andrea',
+            apellido: 'Quintrilef',
+            ano: 1989
+        };
+
+        // 2- Definir y crear un objeto simple utilizando la palabra new.
+        var persona_2 = new Object();
+        persona_2.nombre = 'Rolando';
+        persona_2.apellido = 'Aburto';
+        persona_2.ano = 1989;
+
+        // 3- Definir un constructor de un objeto, y crear objetos del tipo construido.
+        function Persona(nom, ape, an) {
+            this.nombre = nom;
+            this.apellido = ape;
+            this.ano = an;
+        }
+
+        var persona_3 = new Persona('Patricia', 'Quintrilef', 1993);
+        var persona_4 = new Persona('Porotito','Pequeño', 2020);
+
+        /* 
+            This (palabra reservada)
+            - Hace referencia al propietario  de la funcion que esta invocandose.
+            - Hace referencia al objeto donde la funcion es un metodo.
+         */
+
+        // Constructores:
+        // Constructor String
+        var x1 = new String(); // No utilizar
+        var y1 = 'Rolando'; //Utilizar
+
+        // Constructor Number
+        var x2 = new Number(); // No utilizar
+        var y2 = 1989; //Utilizar
+
+        // Constructor Boolean
+        var x3 = new Boolean(); // No utilizar
+        var y3 = true; //Utilizar
+
+        // Constructor Array
+        var x4 = new Array(); // No utilizar
+        var y4 = []; //Utilizar
+
+        // Constructor RegExp
+        var x5 = new RegExp(); // No utilizar
+        var y5 = /()/; //Utilizar
+
+        // Constructor String
+        var x6 = new Function(); // No utilizar
+        var y6 = function name(params) { //Utilizar
+
+            
+        }
+
+        // Constructor Date 
+        var x7 = new Date();
+
+        // Constructor Math No se puede declarar con "new" porque es un objeto
+        
+        // Constructor Object
+        var x8 = {};
+    </script>
+</body>
+</html>

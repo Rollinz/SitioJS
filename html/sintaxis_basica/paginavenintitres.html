@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 23</title>
+</head>
+<body>
+    <script>
+        /* 
+            Sintaxis Break:
+            - Salir o saltar un bucle y finalizando
+            Sintaxis Continue:
+            - Saltar una o mas interaciones
+         */
+
+        // Ejemplo Break
+        for (let i = 0; i < 10; i++) {
+            if (i == 3) {
+                break;
+            }
+            alert('i = ' + i);
+        }
+
+        // Ejemplo Continue
+        for (let i = 0; i < 10; i++) {
+            if (i == 3) {
+                continue;
+            }
+            alert('i = ' + i);
+        }
+
+        // Etiquetas: Preceder una sentencia con el nombre de la etiquta seguido de dos puntos
+        // Break sin etiquetas se usa en bucles o switch y con etiqueta se usa en un bloque de sentencias etiquetado.
+        // Ejemplo de break con etiquetas
+        var animales = ['perro', 'gato', 'conejo'];
+
+        ver_animales:
+        {
+            alert(animales[0]);
+            alert(animales[1]);
+            break ver_animales;
+            alert(animales[2]);
+        }
+
+        // Etiqueta Continue debe siempre estar en un bucle
+        bucle: 
+        for (let i = 0; i < 10; i++) {
+            if (i == 3) {
+                continue bucle;
+            }
+            alert('i = ' + i);
+        }
+    </script>
+</body>
+</html>
