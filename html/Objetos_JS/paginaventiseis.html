@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 26</title>
+</head>
+<body>
+    <script>
+        /*
+            Instanciacion de cadenas
+        */
+        var daw = "Desarollo de aplicaciones web";
+        var dam = 'Desarrollo de aplicaciones multiplataforma';
+        var asir = "Administracion de 'Sistemas informaticos en red'";
+        var smr = "Sistemas \"Microinformaticos\" y redes";
+        var ciclos = new String("");
+
+        // Concatenacion de cadenas
+        ciclos += "Hay 3 ciclos de grado superior: \n";
+        ciclos += daw + ", " + dam + " y " + asir + "\n";
+        ciclos += "y 1 ciclo de grado medio: \n";
+        ciclos += smr;
+        
+        alert(ciclos);
+
+        // Propiedades
+        // Length: devuelve la longitud de una cadena
+        alert("La longitud de la cadena ciclos es: " + ciclos.length);
+
+        // Metodos
+        // Busqueda:
+        // CharAt(<num>): devuelve el caracter de una posicion.
+        alert("El caracter 16 de ña cadena ciclos es: " + ciclos.charAt(16));
+
+        // IndexOf(<caracter>): devuelve la primera posicion de un caracter en una cadena.
+        alert("La primera aparicion de la letra a en ciclos es: " + ciclos.indexOf("a"));
+
+        // lastIndexOf(<caracter>): devuelve la ultima posicion de un caracter en una cadena.
+            alert("La primera aparicion de la letra a en ciclos es: " + ciclos.lastIndexOf("a"));
+
+        // Search(<cadena | expresion>): Buscar una cadena o expresion regular en otra cadena.
+        alert("Busca la cadena 'web' en la variable daw: " + daw.search("web"));
+
+        // match(<Expresion regular>): Busca una expresion regular en otra cadena.
+
+        // Comparacion
+        // localeCompare(<cadena>): devuelve -1 (antes), 0 (igual), 1 (despues)
+        alert("¿Es daw menor que dam? "+ daw.localeCompare(dam));
+
+        // Incluye, empieza o termina
+        // include(<cadena>): devuelve true si la cadena incluye el parametro.
+        alert("¿Incluye la palabra 'Aplicaciones' daw? " + daw.includes("aplicaciones"));
+
+        // StartWith(<cadena>): devuelve true si la cadena empieza con el parametro
+        alert("¿Empíeza daw con la palabra 'aplicaciones'? " + daw.startsWith("aplicaciones"));
+
+        // endsWith(<cadena>): devuelve true si la cadena finaliza con el parametro
+        alert("¿Empíeza daw con la palabra 'aplicaciones'? " + daw.endsWith("aplicaciones"));
+
+        // Concatenar y repeticion
+        // concat(<cadena>): concatena a la cadena el parametro:
+        alert("Concatena daw con dam \n" + daw.concat(dam));
+
+        // repeat(<numero>): repetir la cadena el numero de veces que aparece como parametro
+        alert("Repetir daw \n" + daw.repeat(3));
+
+        // Extraccion
+        // slice(<posicionInicial>, <posicionFinal>): devuelve la cadena comprendida entre ambas posiciones:
+        alert("La cadena que hay entre el 4 y el 6 en daw es: " + daw.slice(4, 6));
+
+        // substring(<posicionInicial>, <posicionFinal>): devuelve la cadena comprendida entre ambas posiciones:
+        alert("La cadena que hay entre el 4 y el 6 en daw es: " + daw.substring(4, 6));
+
+        // slice(<posicionInicial>, <numeroCaracteres>): devuelve la cadena comprendida entre la posicion inicial y el numero de caracteres:
+        alert("La cadena que hay entre el 4 y el 6 en daw es: " + daw.substr(5, 5));
+
+        // split(<caracter>,[numeroVeces]): divide la cadena en un array de subcadenas separadas por el caracter del primer parametro
+        alert("La cadena daw separadas por espacios es: " + daw.split(" ", 2));
+
+        // trim(<cadena>)_ extrae los caracteres de la cadena eliminando los espacios del principio al final.
+        alert("La cadena sin espacios quedaria: \n" + "  Hola   Caracola".trim())
+        
+        // Mayusculas y minusculas
+        // toLowerCase(): devuelve la cadena en minusculas
+        alert(daw.toLowerCase());
+
+        // toUpperCase(): devuelve la cadena en mayusculas
+        alert(daw.toUpperCase());
+
+        // localeupper y lower sirve para lenguas especiales
+
+        // Metodos especiales
+        // toString(): devuelve el valor del objeto string
+        // valueOf(): devuelve el vaLlor primitivo del objetol.
+     </script>
+</body>
+</html>
