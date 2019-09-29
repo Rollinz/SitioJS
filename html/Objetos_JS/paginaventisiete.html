@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 27</title>
+</head>
+<body>
+    <script>
+        /* 
+            Caracteristicas:
+            -Solo hay un tipo de datos numérico.
+            -Podemos representar: 34, 34.05, 123e4, 123e-4, 0xFF
+        */
+
+        // Cambio de base entre numeros: toString()
+        var base10 = 128;
+        alert('El numero +' + base10 + 'en base 2 es ' + base10.toString(2));
+        alert('El numero +' + base10 + 'en base 8 es ' + base10.toString(8));
+        alert('El numero +' + base10 + 'en base 16 es ' + base10.toString(16));
+
+        // Infinito y - infinito: Infinity, -Infinity
+        var inf = 2;
+        
+        while (inf != Infinity) {
+            alert(inf);
+            inf = inf * inf;
+        }
+
+        var div1 = 2, div2 = 0;
+
+        alert('Division 2/0=' + 2/0);
+        alert('Division -2/0=' + (-2/0));
+        alert('Type Of: ' + typeof(div1/div2))
+
+        // Not a Number: NaN
+        var atipico = 100/'Casa';
+        alert(atipico);
+        alert('¿De que tipo es NaN?: ' + typeof(atipico));
+        alert('¿Es un NaN atipico?: ' + isNaN(atipico));
+
+        // Numeros como objetos
+        var num = 123;
+        var num2 = new Number(123);
+        var num3 = new Number(123);
+        alert('Num: ' + typeof(num)); //Devuelve number
+        alert('Num2: ' + typeof(num2)); // devuelve object
+        alert('Num == Num2: ' + (num == num2)); // Devuelve true
+        alert('Num === Num2: ' + (num === num2)); // Devuelve false
+        alert('Num2 === Num3: ' + (num2 === num3)); // Devuelve false (diferente direccion de memoria en RAM)
+
+        // Propiedades
+        var maximo = Number.MAX_VALUE;
+        var minimo = Number.MIN_VALUE;
+        var positivo_infinito = Number.POSITIVE_INFINITY;
+        var negativo_infinito = Number.NEGATIVE_INFINITY;
+        var no_numerica = Number.NaN;
+
+        alert('Maximo = ' + maximo);
+        alert('Minimo = ' + minimo);
+        alert('Positivo infinito = ' + positivo_infinito);
+        alert('Negativo infinito = ' + negativo_infinito);
+        alert('NaN = ' + no_numerica);
+
+        // Métodos
+        // toFixed(<numeroDecimales>): cadena con el numero especifico de decimales especificados (redonde hacia arriba).
+        var x = 9.98765;
+        alert(x.toFixed(0));
+        alert(x.toFixed(2));
+        alert(x.toFixed(6));
+
+        // toPrecision(<numeroCifras>): cadena con el numero especifico de cifras indicado (redonde hacia arriba).
+        var y = 9.8765;
+        alert(y.toPrecision());
+        alert(y.toPrecision(2));
+        alert(y.toPrecision(6));
+
+
+        // toExponential(): cadena con el numero redondeado a notación cientifica.
+        var z = 123456789;
+        alert(z.toExponential());
+
+        // valueOf(): Devuelve el valor primitivo del objeto.
+        // toString(): Devuelve la cadena de un numero.
+        var j = 123;
+        alert(j.toString());
+
+        // Metodos globales para convertir variables en números:
+        // Number(): devuelve el valor numérico de una variable.
+        alert(Number(true)); //Devuelve 1
+        alert(Number(false)); //Devuelve 0
+        alert(Number(Date())); //Devuelve milisegundos desde el 1/1/1970
+        alert(Number('10')); //Devuelve el numero de la cadena
+        alert(Number('Casa')); //Devuelve NaN
+
+        // parseInt() / parseFloat():
+        alert(parseInt('10.6')); //Devuelve el numero
+        alert(parseInt('10 20')); // Devuelve el primer numero
+        alert(parseInt('10 casa')); // Devuelve el primero numero
+        alert(parseInt('casa 20')); // Devuelve NaN
+    </script>
+</body>
+</html>
