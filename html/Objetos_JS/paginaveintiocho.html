@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 28</title>
+</head>
+<body>
+    <script>
+        /*
+            Caracteristicas
+            - Permite realizar operaciones matematicas.
+            - No es un constructor: NO usamos var = new Math();.
+            - Ej: var pi = Math.PI; var raiz = Math.sqrt(35);.
+        */
+
+        // Propiedades
+        // E, LN2, LN10, LOG2E, LOG10E, PI, SQRT1_2, SQRT2
+
+        var pi = Math.PI;
+        console.log('El numero PI vale: ' + pi);
+
+        // Metodos Comunes:
+        // Random(): Devuelve un numero aleatorio entre 0 y 1
+        alert('Numero aleatorio: ' + Math.random());
+        
+        // max(<listaValores>) y min(<minValores>)
+        alert('Maximo de valores: ' + Math.max(1,2,3,4,5,6,7,8,9));
+        alert('Maximo de valores: ' + Math.min(1,2,3,4,5,6,7,8,9));
+
+        // round(<numero>): redondea al alza o a la baja.
+        var a = 4.3;
+        var b = 4.7;
+        alert('Redondeo de ' + a + ' es: ' +Math.round(a));
+        alert('Redondeo de ' + b + ' es: ' +Math.round(b));
+
+        // ceil(<numero>): redondea siempre al alza:
+        alert('Redondeo de ' + a + ' es: ' +Math.ceil(a));
+        
+        // floor(<numero>): redondeo siempre a la baja:
+        alert('Redondeo de ' + a + ' es: ' +Math.floor(a));
+
+        // Numero aleatorio de 0 a 10
+        var aleatorio = Math.floor(Math.random() * 11);
+        alert('Aleatorio es: ' + aleatorio);
+
+        // pow(<base>, <exponente>): devuelve el valor de la potencia
+        alert('La potencia de 3 al cuadrado es: ' + Math.pow(3, 2));
+
+        // sqrt(<numero>): devuelve la raiz del numero:
+        alert('Raiz de 36 es: ' + Math.sqrt(36));
+
+        // abs(<numero>): devuelve el valor absoluto de un numero
+        alert('Valor absoluto de -5: ' + Math.abs(-5));
+
+        // Metodos trigonometricos:
+        // sin, cos, tan, asin, acos, atan, atan2
+    </script>
+</body>
+</html>
